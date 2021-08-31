@@ -37,6 +37,7 @@ class App extends Component {
     this.setState({
       pictures: [],
       page: 1,
+      name: "",
     });
   };
 
@@ -45,6 +46,7 @@ class App extends Component {
     this.onChangeQuery(this.state.query);
     this.setState({ pictures: [], page: 1, loading: true });
     this.clearSubmit();
+    document.getElementById("input").value = "";
   };
 
   getPictures = () => {

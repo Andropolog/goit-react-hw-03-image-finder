@@ -18,6 +18,7 @@ const Searchbar = ({ onHandleSubmit, onHandleChange, query }) => {
           placeholder="Search images and photos"
           value={query}
           onChange={onHandleChange}
+          id="input"
         />
       </form>
     </header>
